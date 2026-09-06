@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Picus Security">
+  <rect width="128" height="128" rx="24" fill="#E31837"/>
+  <path fill="#fff" d="M36 92V36h20c16.5 0 28 10.5 28 27.5S72.5 92 56 92H36zm20-14c8.8 0 14-5.2 14-13.5S64.8 51 56 51H52v27h4z"/>
+  <circle cx="88" cy="44" r="8" fill="#fff"/>
+</svg>

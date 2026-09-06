@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houssam Zouheir | Ingénieur en Cybersécurité — Portfolio</title>
+    <meta name="description" content="Portfolio professionnel de Houssam Zouheir - Ingénieur en Cybersécurité à la recherche d'un stage PFE. Pentest, DevSecOps, Active Directory, SOC, Cloud Security.">
+    <meta name="keywords" content="Houssam Zouheir, Cybersécurité, Pentest, DevSecOps, Active Directory, Cloud Security, Stage PFE, SOC, Red Team, Blue Team">
+    <meta name="author" content="Houssam Zouheir">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Houssam Zouheir | Ingénieur en Cybersécurité">
+    <meta property="og:description" content="Passionné par la cybersécurité offensive et défensive. Recherche activement un stage PFE.">
+    <meta property="og:image" content="assets/photo.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛡️</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Matrix Rain Effect -->
+    <canvas id="matrix-bg" aria-hidden="true"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Accueil">
+                <span class="logo-prefix">root@hz:~#</span><span class="cursor-blink">_</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#experience" class="nav-link">Expérience</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#education" class="nav-link">Formation</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Houssam Zouheir</h1>
+                        <h2 class="hero-subtitle">STUDENT SECURITY ENGINEER — SOC, PENTEST & ANALYST</h2>
+                        <p class="hero-description">
+                            Étudiant ingénieur en cybersécurité, spécialisé en surveillance SOC, tests d'intrusion (pentest), détection de menaces et réponse aux incidents
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-pill"><i class="fas fa-desktop"></i> SOC / SIEM</span>
+                            <span class="hero-pill"><i class="fas fa-shield-halved"></i> Pentest</span>
+                            <span class="hero-pill"><i class="fas fa-code-branch"></i> DevSecOps</span>
+                            <span class="hero-pill"><i class="fas fa-network-wired"></i> Active Directory</span>
+                            <span class="hero-pill"><i class="fas fa-cloud"></i> Cloud Security</span>
+                            <span class="hero-pill"><i class="fas fa-cubes"></i> Kubernetes</span>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="assets/CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                                <i class="fas fa-file-arrow-down"></i> Télécharger mon CV
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> Me contacter
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/houssam-zouheir" target="_blank" rel="noopener" aria-label="Profil LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/houssam-zouheir" target="_blank" rel="noopener" aria-label="Profil GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:houssam.zouheir@gmail.com" aria-label="Envoyer un email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Défiler vers le bas">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="chevron"><i class="fas fa-angle-down"></i></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> whoami
+                </h2>
+                <div class="about-content">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-title">houssam@soc-terminal:~ (bash)</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line"><span class="prompt-user">houssam@sec-ops:~$</span> cat about_me.txt</p>
+                            <div class="terminal-text">
+                                <p><span class="accent">[+]</span> Étudiant ingénieur en <strong>Sécurité de l'Information</strong> (5ème année — Bac+5)</p>
+                                <p><span class="accent">[+]</span> Actif sur les plateformes de simulation <strong>TryHackMe</strong> et <strong>Hack The Box</strong></p>
+                                <p><span class="accent">[+]</span> Profil polyvalent orienté <strong>SOC operations</strong>, <strong>Red-Blue Team</strong>, <strong>DevSecOps</strong> & <strong>Audit de sécurité</strong></p>
+                                <p><span class="accent">[+]</span> Spécialisé en <strong>détection de menaces</strong>, <strong>réponse aux incidents</strong>, <strong>hardened Active Directory</strong> et <strong>sécurité Cloud/Kubernetes</strong></p>
+                                <p><span class="accent">[+]</span> Objectif : Apporter une valeur ajoutée immédiate au sein d'une équipe cybersécurité lors d'un <strong>Stage de Fin d'Études (PFE)</strong></p>
+                            </div>
+                            <p class="terminal-line"><span class="prompt-user">houssam@sec-ops:~$</span> <span class="cursor-blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="skills-container">
+                    <!-- Category 1 -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3><i class="fas fa-shield-halved"></i> Blue Team & Infrastructure</h3>
+                        </div>
+                        <div class="marquee-container">
+                            <div class="marquee" id="blue-marquee"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3><i class="fas fa-brain"></i> AI & Development</h3>
+                        </div>
+                        <div class="marquee-container">
+                            <div class="marquee" id="ai-marquee"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3><i class="fas fa-user-ninja"></i> Offensive Security & Pentest</h3>
+                        </div>
+                        <div class="marquee-container">
+                            <div class="marquee" id="offensive-marquee"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> cat experience.log
+                </h2>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2026</span>
+                                <span class="timeline-location"><i class="fas fa-building"></i> Koog</span>
+                            </div>
+                            <h3 class="timeline-role">Stage DevSecOps & Cloud Security</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Conception et développement de <strong>SentinelForge</strong>, une plateforme DevSecOps cloud-native sécurisant l'ensemble du cycle de vie logiciel.</li>
+                                    <li>Mise en place de pipelines CI/CD sécurisés et de contrôles de sécurité Kubernetes.</li>
+                                    <li>Déploiement d'une détection de menaces en temps réel avec <strong>Wazuh</strong> et <strong>Falco</strong>.</li>
+                                    <li>Mise en œuvre de déploiements GitOps avec <strong>ArgoCD</strong>.</li>
+                                    <li>Développement d'une solution SOAR légère pour l'automatisation de la réponse aux incidents.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-headset"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2 mois (2023)</span>
+                                <span class="timeline-location"><i class="fas fa-building"></i> AXA Assurance Maroc</span>
+                            </div>
+                            <h3 class="timeline-role">Technicien Helpdesk</h3>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Gestion des incidents de sécurité de niveau 1 : analyse, escalade et résolution.</li>
+                                    <li>Configuration et maintenance des postes de travail dans un environnement <strong>Active Directory</strong>.</li>
+                                    <li>Sensibilisation des utilisateurs aux bonnes pratiques de sécurité (phishing, mots de passe).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> ls -la projects/
+                </h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-server"></i></div>
+                            <div class="project-status">COMPLETED</div>
+                        </div>
+                        <h3>Lab Active Directory – Attaque & Défense</h3>
+                        <p>Déploiement d'un domaine AD complet en environnement virtualisé. Simulation d'attaques réelles : Kerberoasting, Pass-the-Hash, DCSync. Mise en place de contre-mesures : GPO, audit des logs, détection via Wireshark et BloodHound.</p>
+                        <div class="project-tags">
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">Kerberoasting</span>
+                            <span class="tag">Pass-the-Hash</span>
+                            <span class="tag">BloodHound</span>
+                            <span class="tag">Wireshark</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-flag"></i></div>
+                            <div class="project-status">ACTIVE</div>
+                        </div>
+                        <h3>Machines CTF – TryHackMe & Hack The Box</h3>
+                        <p>Résolution de machines de niveau intermédiaire : reconnaissance, exploitation de vulnérabilités web, élévation de privilèges Linux/Windows, pivoting. Writeups documentés pour chaque machine résolue.</p>
+                        <div class="project-tags">
+                            <span class="tag">Pentest</span>
+                            <span class="tag">Exploitation</span>
+                            <span class="tag">Privilege Escalation</span>
+                            <span class="tag">Pivoting</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-lock"></i></div>
+                            <div class="project-status">COMPLETED</div>
+                        </div>
+                        <h3>Protocole Signal – Messagerie Sécurisée</h3>
+                        <p>Implémentation d'un protocole de chiffrement bout-en-bout avec gestion des clés, forward secrecy et authentification mutuelle.</p>
+                        <div class="project-tags">
+                            <span class="tag">Cryptographie</span>
+                            <span class="tag">E2EE</span>
+                            <span class="tag">Forward Secrecy</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-satellite"></i></div>
+                            <div class="project-status">COMPLETED</div>
+                        </div>
+                        <h3>AgriTech – Plateforme d'Assurance Intelligente</h3>
+                        <p>Architecture sécurisée pour l'analyse de risques agricoles via données satellitaires, avec contrôle d'accès et protection des données sensibles.</p>
+                        <div class="project-tags">
+                            <span class="tag">IA & Analytics</span>
+                            <span class="tag">Data Protection</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">Cloud Security</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-notes-medical"></i></div>
+                            <div class="project-status">2026</div>
+                        </div>
+                        <h3>Pneumonia Detection from Chest X-Rays</h3>
+                        <p>Modèle de détection de la pneumonie sur radiographies thoraciques avec TensorFlow/Keras et Streamlit. Authentification sécurisée, logging médical, rapports PDF via ReportLab, gestion des données avec NumPy/Pandas, suivi Scrum via Jira et Git.</p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow / Keras</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Medical AI</span>
+                            <span class="tag">Jira / Scrum</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                            <div class="project-status">2025</div>
+                        </div>
+                        <h3>Architecture Entreprise Sécurisée – OpenVPN, pfSense, Suricata</h3>
+                        <p>Infrastructure réseau sécurisée : firewall pfSense, VPN Client-to-Site OpenVPN, IDS/IPS Suricata, serveur Ubuntu durci. Simulation d'attaques réelles et analyse des logs de sécurité.</p>
+                        <div class="project-tags">
+                            <span class="tag">pfSense</span>
+                            <span class="tag">OpenVPN</span>
+                            <span class="tag">Suricata IDS/IPS</span>
+                            <span class="tag">Ubuntu Hardening</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fab fa-windows"></i></div>
+                            <div class="project-status">2025</div>
+                        </div>
+                        <h3>Administration Windows Server 2019</h3>
+                        <p>Configuration d'un environnement Windows Server 2019 : utilisateurs, groupes, permissions, services DHCP, DNS et serveur web.</p>
+                        <div class="project-tags">
+                            <span class="tag">Windows Server 2019</span>
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">DHCP / DNS</span>
+                            <span class="tag">SysAdmin</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-user-check"></i></div>
+                            <div class="project-status">COMPLETED</div>
+                        </div>
+                        <h3>AttendAI – Gestion des Présences par Reconnaissance Faciale</h3>
+                        <p>Application de gestion des présences automatisant le suivi des étudiants via reconnaissance faciale en temps réel, développée avec Laravel.</p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Reconnaissance Faciale</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">IA</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> cat certifications.json
+                </h2>
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/fortinet.svg" alt="Fortinet" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Fortinet Certified Associate</h3>
+                        <p class="cert-subtitle">Cybersecurity</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> Fortinet</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2026 – 2028</p>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/opswat.svg" alt="OPSWAT Academy" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>OT Security Expert</h3>
+                        <p class="cert-subtitle">Operational Technology</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> OPSWAT Academy</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2026 – 2027</p>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/oracle.svg" alt="Oracle" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Oracle Cloud Infrastructure</h3>
+                        <p class="cert-subtitle">Foundations</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> Oracle</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2025 – 2026</p>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/picus.svg" alt="Picus Security" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Foundations of Threat Hunting</h3>
+                        <p class="cert-subtitle">Threat Detection</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> Picus Security</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2025</p>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/cisco.svg" alt="Cisco" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p class="cert-subtitle">Security Fundamentals</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> Cisco</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2025 – 2026</p>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/cisco.svg" alt="Cisco" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Ethical Hacker</h3>
+                        <p class="cert-subtitle">Penetration Testing</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> Cisco</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2026</p>
+                    </div>
+
+                    <!-- Cert 7 -->
+                    <div class="cert-card">
+                        <div class="cert-badge-logo">
+                            <img src="assets/icons/certs/tryhackme.svg" alt="TryHackMe" class="cert-logo" width="44" height="44" loading="lazy">
+                        </div>
+                        <h3>Jr Penetration Tester</h3>
+                        <p class="cert-subtitle">Practical Pentest</p>
+                        <p class="cert-org"><i class="fas fa-award"></i> TryHackMe</p>
+                        <p class="cert-validity"><i class="far fa-clock"></i> 2026 – 2029</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> cat education.txt
+                </h2>
+                <div class="education-container">
+                    <!-- Edu 1 -->
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>Cycle Ingénieur – Sécurité de l'Information et Technologie</h3>
+                            <p class="education-school"><i class="fas fa-university"></i> Faculté des Sciences et Techniques, Guéliz, Marrakech</p>
+                            <p class="education-year"><span class="highlight-tag">En cours (5ème année — Bac+5)</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="education-content">
+                            <h3>Licence – Génie Électrique et Informatique Industrielle</h3>
+                            <p class="education-school"><i class="fas fa-university"></i> FST Mohammedia</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 3 -->
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-school"></i></div>
+                        <div class="education-content">
+                            <h3>Baccalauréat Sciences Expérimentales</h3>
+                            <p class="education-school"><i class="fas fa-university"></i> Lycée</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 4 -->
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-language"></i></div>
+                        <div class="education-content">
+                            <h3>Diplôme DELF B2</h3>
+                            <p class="education-school"><i class="fas fa-globe"></i> Langue Française</p>
+                            <p class="education-year"><span class="status-tag">Certifié</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">$</span> ./contact.sh
+                </h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Coordonnées & Réseaux</h3>
+                        <p class="contact-subtext">N'hésitez pas à me contacter pour toute opportunité de stage PFE ou échange technique.</p>
+                        
+                        <div class="contact-card-list">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:houssam.zouheir@gmail.com">houssam.zouheir@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <a href="tel:+212672815377">+212 672 815 377</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Casablanca, Maroc</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/houssam-zouheir" target="_blank" rel="noopener">linkedin.com/in/houssam-zouheir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <h3><i class="fas fa-terminal"></i> Formulaire de Message</h3>
+                            
+                            <div id="form-status" class="form-status" aria-live="polite"></div>
+
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Nom Complet</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-at"></i> Adresse Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre.email@domaine.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject"><i class="fas fa-heading"></i> Sujet / Objet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Ex: Offre de stage PFE / Demande d'information" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Téléphone / Entreprise (Optionnel)</label>
+                                <input type="text" id="phone" name="phone" placeholder="Ex: +212 600 000 000 ou Nom de l'entreprise">
+                            </div>
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Envoyer le Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="nav-logo">HZ<span class="accent">_</span></span>
+                <p>Houssam Zouheir — Ingénieur en Cybersécurité</p>
+            </div>
+            <p class="footer-tagline">« La sécurité n'est pas un produit, c'est un processus. » — Bruce Schneier</p>
+            <p class="footer-copy">&copy; 2026 Houssam Zouheir. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+

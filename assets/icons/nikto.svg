@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nikto">
+  <rect width="64" height="64" rx="12" fill="#172554"/>
+  <circle cx="32" cy="24" r="8" fill="#93c5fd"/>
+  <path fill="#60a5fa" d="M18 46c2-10 8-14 14-14s12 4 14 14H18z"/>
+  <path stroke="#bfdbfe" stroke-width="2" fill="none" d="M12 18 20 26M52 18 44 26M32 8v8"/>
+</svg>

@@ -1,0 +1,51 @@
+INSTRUCTIONS POUR COMPLÉTER VOTRE PORTFOLIO
+============================================
+
+Étape 1 : PHOTO DE PROFIL
+--------------------------
+Remplacez le fichier "photo.jpg" dans ce dossier par votre vraie photo.
+
+Recommandations :
+- Format : JPG ou PNG
+- Dimensions : 400x400 pixels (minimum)
+- Photo professionnelle, de préférence sur fond neutre
+- La photo sera affichée en cercle sur le site
+
+Étape 2 : CV
+------------
+Ajoutez votre CV en PDF dans ce dossier avec le nom "CV.pdf"
+
+Recommandations :
+- Format : PDF uniquement
+- Nom du fichier : CV.pdf (exactement)
+- Poids : moins de 5 MB si possible
+- CV à jour avec vos dernières expériences
+
+Étape 3 : TESTER LE SITE
+-------------------------
+Ouvrez le fichier "index.html" (à la racine du projet) dans votre navigateur.
+
+Vérifications :
+✓ La photo s'affiche correctement
+✓ Le bouton "Télécharger mon CV" fonctionne
+✓ Tous les liens s'ouvrent correctement
+✓ Le site est responsive (testez sur mobile)
+✓ Le formulaire de contact ouvre votre client email
+
+Étape 4 : MISE EN LIGNE (optionnelle)
+--------------------------------------
+Pour mettre votre portfolio en ligne, consultez le README.md pour les options :
+- GitHub Pages (gratuit, recommandé)
+- Netlify (gratuit, très simple)
+- Vercel (gratuit, rapide)
+
+PERSONNALISATION SUPPLÉMENTAIRE
+--------------------------------
+- Modifiez le fichier "index.html" pour changer les textes
+- Modifiez le fichier "script.js" pour ajuster les compétences
+- Modifiez le fichier "style.css" pour personnaliser les couleurs
+
+Pour plus de détails, consultez le README.md à la racine du projet.
+
+Bon courage !
+Houssam Zouheir
